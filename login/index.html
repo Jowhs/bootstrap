@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+  <title>LogReg App</title>
+</head>
+<body class="bg-faded mt-5 clearfix">
+  
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xl-4 col-md-6 col-12">
+
+        <div class="alert alert-danger" role="alert">
+          <button class="close" type="button" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <strong>Oh snap!</strong> Your login or password is not correct
+        </div>
+      
+        <div class="tab-content">
+          <div class="tab-pane active" id="login" role="tabpanel">
+            
+            <div class="card">
+              <div class="card-block pt-3">
+                <h4 class="card-title text-center text-uppercase text-success">Login</h4>
+                <p class="card-text text-center text-muted">
+                  <small>Please fill in your login information</small>
+                </p>
+
+                <form action="" style="padding: 20px;">
+
+                  <fieldset class="form-group">
+                    <label for="loginEmail">Email adress</label>
+                    <input type="email" class="form-control" id="loginEmail" placeholder="Email">
+                  </fieldset>
+
+                  <fieldset class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+                  </fieldset>
+
+                  <div class="checkbox float-left">
+                    <label data-toggle="tooltip" data-placement="top" title="Remember my credentials next time">
+                      <input type="checkbox"> Remember me
+                    </label>
+                  </div>
+
+                  <a href="#" class="float-right">Forgot Password?</a>
+
+                  <button class="btn btn-success btn-block">Login</button>
+
+                </form>
+
+              </div>
+
+              <div class="card-footer text-muted text-center">
+                Don't you have an account?
+                <a data-toggle="tab" href="#register" role="tab" class="text-warning">Sign Up</a>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="tab-pane active" id="register" role="tabpanel">
+            <div class="card">
+              <div class="card-block pt-3">
+                <h4 class="card-title text-center text-uppercase text-warning">Register</h4>
+                <p class="card-text text-center text-muted">
+                  <small>Please fill in your registration information</small>
+                </p>
+
+                <form action="" style="padding: 20px;">
+
+                  <fieldset class="form-group">
+                    <label for="registerEmail">Email adress</label>
+                    <input type="email" class="form-control" id="registerEmail" placeholder="Email">
+                  </fieldset>
+
+                  <fieldset class="form-group">
+                    <label for="registerPassword">Password</label>
+                    <input type="password" class="form-control" id="registerPassword" placeholder="Password" data-container="body" title="Password Requirements" data-toggle="popover" data-placement="left" data-content="Password must include at least 8 characters">
+                  </fieldset>
+
+                  <fieldset class="form-group">
+                    <label for="registerSelectDay">Favourite Day</label>
+                    <select id="registerSelectDay" class="form-control">
+                      <option>Monday</option>
+                      <option>Tuesday</option>
+                      <option>Wednesday</option>
+                      <option>Thursday</option>
+                      <option>Friday</option>
+                      <option>Saturday</option>
+                      <option>Sunday</option>
+                    </select>
+                  </fieldset>
+
+                  <div class="checkbox float-left">
+                    <label>
+                      <input type="checkbox"> Remember me
+                    </label>
+                  </div>
+
+                  <a href="#" class="float-right">Forgot Password?</a>
+
+                  <button class="btn btn-warning btn-block">Register</button>
+
+                </form>
+
+              </div>
+
+              <div class="card-footer text-muted text-center">
+                Already have an account?
+                <a data-toggle="tab" href="#login" role="tab" class="text-warning">Login</a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>  
+      </div>
+    </div>
+  </div>
+
+
+ <!-- Scripts -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+  <script>
+    $(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+      $('[data-toggle="popover"]').popover();
+    })
+  </script>
+
+</body>
+</html>

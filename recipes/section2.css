@@ -1,0 +1,23 @@
+.wf {outline: 0px solid black;}
+
+.ns {background-color: silver;}
+
+.ns2 {background-color: gray;}
+
+.row {min-height: 500px;}
+
+.cont {height: 100px;}
+
+.even {background-color: #515FFF;}
+
+.odd {background-color: #3E90E8;}
+
+.light {background-color:white;}
+
+.dark {background-color:black;}
+
+.scrollspy {
+  position: relative;
+  height: 300px;
+  overflow-y: scroll;
+}

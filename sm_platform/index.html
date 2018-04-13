@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+  <title>Social App</title>
+</head>
+<body>
+  <div class="bgnd">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="#">Social App</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="messages.html" data-toggle="modal" data-target="#messages">Messages</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav> 
+    <div class="mycard">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-xs-12">
+            <div class="card" style="margin-bottom:30px;">
+              <img src="http://i.imgur.com/2Aslvyy.jpg" width="100%" alt="" class="card-img-top">
+              <div class="card-block text-center text-xs-center">
+                <img src="img/tesla.jpg" style="max-width:100px; margin-top:-50px;" alt="" class="img-thumbnail m-b-1"><br>
+                <span class="h4 card-title">Nikola Tesla</span><br>
+                <a href="#"><small>@tesla</small></a>
+              </div>
+              <div class="col-xs-6">
+                <small class="text-muter text-uppercase">Followers</small>
+                <span class="h4">123</span>
+              </div>
+              <div class="col-xs-6">
+                <small class="text-muter text-uppercase">Following</small>
+                <span class="h4">123</span>
+              </div>
+            </div>
+          <div class="card hidden-md-down">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item text-muted">
+                Trending
+                <small><a href="#">View all</a></small>
+              </li>
+              <li class="list-group-item"><a href="#">#bootstrap4!</a></li>
+              <li class="list-group-item"><a href="#">#tesla</a></li>
+              <li class="list-group-item"><a href="#">#hashtaghere</a></li>
+              <li class="list-group-item"><a href="#">#markotto</a></li>
+            </ul>  
+          </div>
+          </div>
+          <div class="col-lg-6 col-md-8 col-xs-12">
+            <div class="card card-block mycard" style="margin-bottom:30px;">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="type your text...">
+                <span class="input-group-btn">
+                  <button type="button" class="btn btn-primary">Post</button>
+                </span>
+              </div>
+            </div>
+
+            <div class="card card-block" style="margin-bottom: 15px;">
+              <div class="media mycard">
+                <a href="#" class="media-left">
+                  <img src="img/tesla.jpg" width="" style="max-width: 50px;" class="media-object">
+                </a>
+                <div class="media-body" style="margin-left: 10px;">
+                  <h5 class="media-heading m-b-0">Nikola Tesla</h5>
+                  <div class="m-b-1 text-muted">
+                    <small>@tesla - 12h</small>
+                  </div>
+                  <p>Status update goes here!!!</p>
+                </div>
+                <div class="text-xs-right">
+                  <a href="#" class="card-link">Share</a>
+                  <a href="#" class="card-link">Like</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card card-block" style="margin-bottom: 15px;">
+              <div class="media mycard">
+                <a href="#" class="media-left">
+                  <img src="img/tesla.jpg" width="" style="max-width: 50px;" class="media-object">
+                </a>
+                <div class="media-body" style="margin-left: 10px;">
+                  <h5 class="media-heading m-b-0">Nikola Tesla</h5>
+                  <div class="m-b-1 text-muted">
+                    <small>@tesla - 12h</small>
+                  </div>
+                  <p>Cras et tempor ante, nec sollicitudin augue. Quisque dignissim, diam ut sagittis luctus, libero diam facilisis ex, id dignissim tortor sem a quam.</p>
+                  <img src="img/tesla2.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="text-xs-right">
+                  <a href="#" class="card-link">Share</a>
+                  <a href="#" class="card-link">Like</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card card-block" style="margin-bottom: 15px;">
+              <div class="media mycard">
+                <a href="#" class="media-left">
+                  <img src="img/tesla.jpg" width="" style="max-width: 50px;" class="media-object">
+                </a>
+                <div class="media-body" style="margin-left: 10px;">
+                  <h5 class="media-heading m-b-0">Nikola Tesla</h5>
+                  <div class="m-b-1 text-muted">
+                    <small>@tesla - 12h</small>
+                  </div>
+                  <p>Nullam tempus erat nec vulputate ultrices. Fusce blandit vehicula tortor, eu mattis diam laoreet in. Donec laoreet pharetra sapien.</p>
+                </div>
+                <div class="text-xs-right">
+                  <a href="#" class="card-link">Share</a>
+                  <a href="#" class="card-link">Like</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-12">
+            <div class="card">
+              <div class="card-block">
+                <p class="text-muted">
+                  Who to Follow
+                  <small><a href="#">View all</a></small>
+                </p>
+
+                <div class="media mycard">
+                  <a href="#" class="media-left">
+                    <img src="img/einstein.jpg" class="media-object" style="max-width: 50px;">
+                  </a>
+                  <div class="media-body">
+                    <p class="media-heading m-b-0"><strong>Albert Einstein</strong></p>
+                    <button class="btn btn-outline-primary btn-sm">Follow</button>
+                  </div>
+                </div>
+
+                <div class="media mycard">
+                  <a href="#" class="media-left">
+                    <img src="img/curie.jpg" class="media-object" style="max-width: 50px;">
+                  </a>
+                  <div class="media-body">
+                    <p class="media-heading m-b-0"><strong>Marie Curie</strong></p>
+                    <button class="btn btn-outline-primary btn-sm">Follow</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+
+    <div class="modal" id="messages" tabindex="-1" role="dialog" aria-labelledby="Messages" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Messages</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!-- Scripts -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+.bgnd{
+  background: gainsboro;
+}
+
+.mycard {
+  padding: 20px;
+  display: flex;
+}
+
+.espais {
+  margin-top: 50px;
+  height: 500px;
+}
