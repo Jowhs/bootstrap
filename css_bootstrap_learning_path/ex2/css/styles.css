@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+.cont {
+  width: 1000px;
+  margin: auto;
+}
+
+.titulo{
+  margin: auto;
+}
+
+h1 {
+  font-family: Helvetica, sans-serif;
+}
+
+p, h2 {
+  font-family: Helvetica, sans-serif;
+  line-height: 16pt;
+  text
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  background-color: gray;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -14px;
+  background-color: #ff9f55;
+  border: 4px solid #ff9f55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::before {
+  content: '';
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #fcd577;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #fcd577;
+}
+
+.right::before {
+  content: '';
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid  #d1fc77 ;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent  #d1fc77  transparent transparent ;
+}
+
+.right::after {
+  left: -16px;
+}
+
+.content1 {
+  padding: 20px 30px;
+  background-color: #fcd577;
+  position: relative;
+  border-radius: 6px;
+}
+
+.content2 {
+  padding: 20px 30px;
+  background-color:  #d1fc77 ;
+  position: relative;
+  border-radius: 6px;
+}
+
+@media all and (max-width: 600px) {
+  .timeline::after {
+    left: 31px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent  white transparent transparent;
+  }
+
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+  .right {
+    left: 0%;
+  }
+
+}

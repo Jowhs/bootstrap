@@ -1,0 +1,10 @@
+.trazo {
+  border: 1px solid gainsboro;
+}
+
+.head-style {
+  width: 170px;
+  text-align: center;
+  vertical-align: 70px;
+  color: white;
+}
