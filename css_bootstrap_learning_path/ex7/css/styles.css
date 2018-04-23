@@ -1,0 +1,12 @@
+.circulo {
+  height: 250px;
+  width: 250px;
+  background-color: gainsboro;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 10px 40px;
+}
+
+.titlefont {
+  font-size: 24px;
+}
