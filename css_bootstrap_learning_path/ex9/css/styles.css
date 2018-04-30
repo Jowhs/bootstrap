@@ -1,0 +1,23 @@
+.dollar {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.buts-blue {
+  color: white;
+  background-color: blue;
+}
+
+.buts-red {
+  color: white;
+  background-color: red;
+}
+
+.brad-blue {
+  border-radius: 5px 0 0 5px;
+}
+
+.brad-red {
+  border-radius: 0 5px 5px 0;
+}
